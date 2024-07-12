@@ -1,0 +1,87 @@
+body {
+  background: #2c2c2c;
+  color: rgb(230, 214, 214);
+}
+
+/* Container for Movie List Heading and Search Box */
+.search-container {
+  background-color: #1f1f1f; 
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  border: 2px solid wheat; 
+  color: gold;
+}
+
+/* Container for About Section */
+.about-container {
+  background-color: #1f1f1f; /* Change to your desired color */
+  padding: 20px;
+  border-radius: 10px;
+  color: ghostwhite;
+  font-size: larger;
+  border: 2px solid wheat; /* Add border here */
+  margin-bottom: 20px;
+}
+
+/* Container for Movie List and Favourites */
+.movie-container {
+  background-color: #1f1f1f; /* Change to your desired color */
+  padding: 10px; /* Adjust padding to shrink size */
+  border-radius: 10px;
+  border: 2px solid wheat; /* Add border here */
+  color: gold;
+  /* color: ghostwhite; */
+  max-height: 400px; /* Example: Limit height */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
+
+
+/* Container for Favourites */
+.movies-container {
+  background-color: #1f1f1f; /* Change to your desired color */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid wheat; /* Add border here */
+  color: ghostwhite;
+}
+
+.favourites-container {
+  background-color: #1f1f1f; /* Change to your desired color */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid wheat; /* Add border here */
+  color: gold;
+}
+
+/* Existing Styles for Movie Items */
+.movie-app > .row { /* inside all of the rows of the movie class */
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
